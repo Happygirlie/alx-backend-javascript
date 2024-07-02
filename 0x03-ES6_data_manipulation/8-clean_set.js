@@ -3,9 +3,9 @@ const cleanSet = (set, startString) => {
     return '';
   }
   return [...set]
-  .filter((parametro) => (parametro !== undefined ? parametro.startsWith(startString) : ''))
-  .map((parametro) => (parametro !== undefined ? parametro.slice(startString.length) : ''))
-  .join('-');
+    .filter((parametro) => (parametro !== undefined ? parametro.startsWith(startString) : ''))
+    .map((parametro) => (parametro !== undefined ? parametro.slice(startString.length) : ''))
+    .join('-');
 };
 
 export default cleanSet;
